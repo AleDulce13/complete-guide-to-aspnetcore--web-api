@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cisco01\\Desktop\\LASD\\Libreria_DALS\\Libreria_DALS\\Libreria_DALS.csproj": {}
+    "C:\\Users\\cisco01\\Desktop\\LASD\\complete-guide-to-aspnetcore--web-api\\Libreria_DALS\\Libreria_DALS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cisco01\\Desktop\\LASD\\Libreria_DALS\\Libreria_DALS\\Libreria_DALS.csproj": {
+    "C:\\Users\\cisco01\\Desktop\\LASD\\complete-guide-to-aspnetcore--web-api\\Libreria_DALS\\Libreria_DALS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cisco01\\Desktop\\LASD\\Libreria_DALS\\Libreria_DALS\\Libreria_DALS.csproj",
+        "projectUniqueName": "C:\\Users\\cisco01\\Desktop\\LASD\\complete-guide-to-aspnetcore--web-api\\Libreria_DALS\\Libreria_DALS.csproj",
         "projectName": "Libreria_DALS",
-        "projectPath": "C:\\Users\\cisco01\\Desktop\\LASD\\Libreria_DALS\\Libreria_DALS\\Libreria_DALS.csproj",
+        "projectPath": "C:\\Users\\cisco01\\Desktop\\LASD\\complete-guide-to-aspnetcore--web-api\\Libreria_DALS\\Libreria_DALS.csproj",
         "packagesPath": "C:\\Users\\cisco01\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cisco01\\Desktop\\LASD\\Libreria_DALS\\Libreria_DALS\\obj\\",
+        "outputPath": "C:\\Users\\cisco01\\Desktop\\LASD\\complete-guide-to-aspnetcore--web-api\\Libreria_DALS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,6 +44,30 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
