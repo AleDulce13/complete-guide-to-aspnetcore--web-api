@@ -11,9 +11,6 @@ namespace Libreria_DALS.Data
 
         }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-
-        }
+        public DbSet<Books> Books { get; set; }
     }
 }

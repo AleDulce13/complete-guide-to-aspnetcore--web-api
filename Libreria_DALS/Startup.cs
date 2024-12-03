@@ -34,7 +34,7 @@ namespace Libreria_DALS
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "CREAR_API", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Libreria_DALS", Version = "v1" });
             });
         }
 
@@ -44,12 +44,8 @@ namespace Libreria_DALS
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-            }
-            else
-            {
-                app.UseExceptionHandler("/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
+                app.UseSwagger();
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Libreria_DALS v1"));
             }
 
             app.UseHttpsRedirection();
@@ -61,8 +57,11 @@ namespace Libreria_DALS
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapRazorPages();
+                endpoints.MapControllers();
             });
+
+            AppDbInitializer.Seed(app);
         }
+
     }
 }
